@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Belajar Basic Node JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/muhammadyusuf/node.git"
+  },
+  "author": "Muhammad Yusuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/muhammadyusuf/node/issues"
+  },
+  "homepage": "https://gitlab.com/muhammadyusuf/node#README"
+}

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://gitlab.com/muhammadyusuf/node/issues"
   },
-  "homepage": "https://gitlab.com/muhammadyusuf/node#README"
+  "homepage": "https://gitlab.com/muhammadyusuf/node#README",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }

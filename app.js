@@ -1,16 +1,5 @@
 const fs = require('fs');
-const os = require('os');
-const notes = require('./notes');
 const _ = require('lodash');
-
-var user = os.userInfo();
-console.log(user);
-
-var res = notes.addNote();
-console.log(res);
-
-var add = notes.penjumlahan(10, 11);
-console.log(add);
 
 // Testing Lodash
 console.log(_.isString(true)); // ==> Hasilnya false karena isString bukan Boolean

@@ -1,24 +1,13 @@
 # Belajar Basic Node JS
 
-## Install lodash dan Testing lodash
 
-Perintah installasi
+## Kali ini membuat semacam aplikasi Note yang disimpan di file notes-data.json
 
-```bash
-npm install lodash --save
-```
-## Install nodemon
-
-perintah :
+Perintah Untuk mencobanya seperti berikut :
 
 ```bash
-sudo npm install nodemom -g
+node app.js add  --title='Minuman' --body='Es Jeruk'
 ```
 
-### nodemon berguna untuk autoreload sehingga tidak perlu menjalankan berulang kali, ketika kita ada perubahan maka akan otomatis reload
+#### Untuk Melihat Tutorial Sebelumnya Silahkan Lakukan Checkout ke Commit Sebelumnya
 
-Perintah untuk menjalankan agar menggunakan nodemon ada seperti berikut :
-
-```bash
-nodemon app.js
-```

@@ -1,11 +1,31 @@
+console.log('Starting app.js');
+
 const fs = require('fs');
 const _ = require('lodash');
+const notes = require('./notes.js');
+const yargs = require('yargs');
 
-// Testing Lodash
-console.log(_.isString(true)); // ==> Hasilnya false karena isString bukan Boolean
-console.log(_.isString('Muhammad Yusuf')); // ==> Sebaliknya hasilnya yaitu True
+const argv = yargs.argv;
+var command =  process.argv[2];
+console.log('Command : ', command);
+console.log('Yargs : ', argv);
 
-// Testing Lodash Untuk Filtering Array
-var filteredArray = _.uniq(['Yusuf', 1, 'Yusuf', 'Aini', 1, 2, 3, 4, 5, 'Aini']);
-console.log(filteredArray); // Hasilnya akan [ 'Yusuf', 1, 'Aini', 2, 3, 4, 5 ] karena di filter untuk value yg sama
-
+if (command === 'add') {
+    var note = notes.addNote(argv.title, argv.body);
+    if (note) {
+        console.log('Note Created');
+        console.log('------------');
+        console.log(`Title  : ${note.title}`);
+        console.log(`Body   : ${note.body}`);
+    } else {
+        console.log('Note Title Taken');
+    }
+} else if (command === 'list') {
+    notes.getAll();
+} else if (command === 'read') {
+    notes.getNote(argv.title);
+} else if (command === 'remove') {
+    notes.removeNote(argv.title);
+} else {
+    console.log('Command Not Recognized');
+}

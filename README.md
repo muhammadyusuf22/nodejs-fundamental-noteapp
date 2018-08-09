@@ -1,7 +1,4 @@
-# Belajar Basic Node JS
+# Belajar Basic Fundamental Node JS
 
-
-## Hanya Coba-coba Function di File arrow-function.js
-
-##### Untuk Melihat Tutorial Sebelumnya Silahkan Lakukan Checkout ke Commit Sebelumnya
+##Untuk Melihat History Sebelumnya Silahkan Lakukan Checkout ke Commit Sebelumnya
 
